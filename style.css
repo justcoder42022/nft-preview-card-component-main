@@ -1,0 +1,138 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --color-main-BG: hsl(217, 54%, 11%);
+  --color-card-BG: hsl(216, 50%, 16%);
+  --color-line: hsl(215, 32%, 27%);
+  --color-White: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-main-BG);
+  min-height: 100vh;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 375px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-card-BG);
+}
+article{
+    width: 100%;
+    position: relative;
+}
+.hover-div{
+    position: absolute; 
+    background-color:hsla(178, 100%, 50%, .6) ;
+    border-radius: .75rem;
+    opacity:0;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 4px);
+   }
+   .hover-img{
+
+       position: absolute;
+      z-index: 1;
+       top:50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+   }
+   .hover-div:hover{
+opacity: 1;
+   }
+h1 {
+  color: var(--color-White);
+  padding: 1rem 0;
+  font-weight: 600;
+}
+p {
+  color: var(--Soft-blue);
+  font-weight: 300;
+  line-height: 1.6;
+}
+strong {
+  color: var(--color-White);
+  font-weight: 400;
+  padding-left: .2rem;
+}
+article > img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+main ul {
+  display: flex;
+  padding: 1.5rem 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--color-line) 2px solid;
+  margin-bottom: 1rem;
+}
+
+li:first-child {
+  color: var(--Cyan);
+}
+li:nth-child(2) {
+  color: var(--Soft-blue);
+}
+
+li {
+  list-style: none;
+}
+li img {
+  padding-right: 0.2rem;
+  vertical-align: bottom;
+ 
+}
+h1:hover,strong:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+
+.credit {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: var(--Soft-blue);
+}
+
+.avtar {
+  vertical-align: bottom;
+  width: 2.5rem;
+  height: auto;
+  margin-right: 1rem;
+  border: var(--color-White) 2px solid;
+  border-radius: 9999px;
+}
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+p:first-child {
+  color: var(--Cyan);
+}
+
+
+
+
+
