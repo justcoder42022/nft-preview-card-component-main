@@ -22,47 +22,51 @@
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    <div class="wrapper">
       <main>
-        <article>
+        <section class=main-image-section>
         <img class="main-img"
           src="images/image-equilibrium.jpg"
           alt="eth logo"
           width="200"
           height="300"
         />
-      </article> 
+        </section>
+       
+        <article>
         <h1>Equilibrium #3429</h1>
 
         <p>Our Equilibrium collection promotes balance and calm.</p>
-        
-        <ul class="icon-text">
-          <li>
-            <img
-              class="icon"
-              src="images/icon-ethereum.svg"
-              alt="clock icon"
-            />
-            0.041 ETH
-          </li>
-          <li>
-            <img class="icon" src="images/icon-clock.svg" alt="clock icon" />
-          3 days left
-          </li>
-        </ul>
-
-        <div class="credit">
+        </article>
+        <section class="icon-section">
+          <ul class="icon-text">
+            <li>
+              <img
+                class="icon"
+                src="images/icon-ethereum.svg"
+                alt="clock icon"
+                
+                   
+              />
+              0.041 ETH
+            </li>
+            <li>
+              <img class="icon" src="images/icon-clock.svg" alt="clock icon"  
+                    />
+            3 days left
+            </li>
+          </ul>
+  </section>
+        <section class="avtar-containter">
           <img
-            class="avtar"
+            class="avtar-img"
             src="images/image-avatar.png"
             alt="Jules Wyvern image"
-            height="15px"
-            width="15px"
+            height="15"
+            width="15"
           />
           Creation of  <strong>Jules Wyvern</strong>
          
-        </div>
+        </section>
       </main>
-    </div>
   </body>
 </html>
