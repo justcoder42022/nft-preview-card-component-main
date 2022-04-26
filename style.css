@@ -33,25 +33,22 @@ article{
     width: 100%;
     position: relative;
 }
-.hover-div{
+article::after{
+    content: "";
     position: absolute; 
     background-color:hsla(178, 100%, 50%, .6) ;
     border-radius: .75rem;
-    opacity:0;
+    background-image: url("images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     top: 0;
     width: 100%;
     height: calc(100% - 4px);
+    display: none;
    }
-   .hover-img{
-
-       position: absolute;
-      z-index: 1;
-       top:50%;
-       left: 50%;
-       transform: translate(-50%,-50%);
-   }
-   .hover-div:hover{
-opacity: 1;
+  
+   article:hover:after{
+     display: block;
    }
 h1 {
   color: var(--color-White);
