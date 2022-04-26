@@ -15,25 +15,22 @@ body {
   font-family: "Outfit", sans-serif;
   background-color: var(--color-main-BG);
   min-height: 100vh;
-}
-.wrapper {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main {
-  width: 375px;
+  width: 343px;
   padding: 1rem;
   margin: 1rem;
   border-radius: 0.75rem;
   background-color: var(--color-card-BG);
 }
-article{
+.main-image-section{
     width: 100%;
     position: relative;
 }
-article::after{
+.main-image-section::after{
     content: "";
     position: absolute; 
     background-color:hsla(178, 100%, 50%, .6) ;
@@ -47,7 +44,7 @@ article::after{
     display: none;
    }
   
-   article:hover:after{
+  .main-image-section:hover:after{
      display: block;
    }
 h1 {
@@ -65,12 +62,12 @@ strong {
   font-weight: 400;
   padding-left: .2rem;
 }
-article > img {
+.main-img {
   width: 100%;
   height: auto;
   border-radius: 0.75rem;
 }
-main ul {
+.icon-section ul {
   display: flex;
   padding: 1.5rem 0;
   justify-content: space-between;
@@ -101,7 +98,7 @@ h1:hover,strong:hover{
 
 
 
-.credit {
+.avtar-containter {
   padding: 1rem 0;
   display: flex;
   align-items: center;
@@ -109,7 +106,7 @@ h1:hover,strong:hover{
   color: var(--Soft-blue);
 }
 
-.avtar {
+.avtar-img {
   vertical-align: bottom;
   width: 2.5rem;
   height: auto;
@@ -117,17 +114,9 @@ h1:hover,strong:hover{
   border: var(--color-White) 2px solid;
   border-radius: 9999px;
 }
-.attribution {
-  font-size: 12px;
-  text-align: center;
-}
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-p:first-child {
-  color: var(--Cyan);
-}
+
+
 
 
 
